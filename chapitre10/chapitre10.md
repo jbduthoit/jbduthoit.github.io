@@ -7,4 +7,8 @@ La première apparition de la lettre « e » pour désigner la base
  qui le définit comme le nombre dont le logarithme est l'unité et 
  qui se sert des tables de Vlacq pour l'évaluer à 2,7182817.
  
- ![Euler](euler.jpg)
+ ![center 60%](euler.jpg)
+ 
+ $\vect{u}$
+ 
+ 
