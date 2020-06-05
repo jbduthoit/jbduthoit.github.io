@@ -1,6 +1,7 @@
-
-<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-
+<script type="text/javascript" charset="utf-8" src="
+https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML,
+https://jbduthoit.github.io/javascripts/MathJaxLocal.js">
+</script>
 
 # La fonction exponentielle
 
