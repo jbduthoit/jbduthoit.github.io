@@ -1,0 +1,93 @@
+
+
+<!doctype html>
+<html>
+	<head>
+        <link rel="stylesheet" href="QuizzStyle.css">
+		<meta charset='utf-8'>
+		<title> Quiz super cool </title>
+	</head>
+	<body>
+		<form name="MonQuizz">
+			<fieldset>
+				<legend> Quiz sur le Japon </legend>
+				<p> 
+					Que signifie le terme "sakura" en francais?
+					<input type="radio" name="sin" value="Cerisier" checked> Cerisier
+					<input type="radio" name="sin" value="Fleuraison" checked> Fleuraison
+                </p>
+                <div class="image">
+                    
+                    <img src="Image.jpg">
+                </div>
+                
+				<p>
+					De quelle ville japonaise s'agit-il ?
+					<input type="text" name="ville" title="Nom de la ville">
+				</p>
+				<p>
+					Lorsqu'ils vont a l'ecole les jeunes japonnais ne mange pas a la cantine. Comment s'appellent les delicieux paniers repas qu'ils ramenent ?<br>
+					<input type="checkbox" name="ecole" id="O"> Osen
+                    <input type="checkbox" name="ecole" id="B"> Bento
+                    <input type="checkbox" name="ecole" id="A"> Auto
+                    <input type="checkbox" name="ecole" id="K"> Kamai
+				</p>
+				<p>
+					En quel mois se passe la rentre scolaire au Japon?
+                    <select name="mois">
+                        <option value="S"> Septembre</option>
+                        <option value="J"> Janvier</option>
+                        <option value="A"> Avril</option> 						
+				</p>
+				
+				<p>
+					<input type="button" onclick="Reponses()" value="Réponse aux questions">
+				</p>
+			</fieldset>
+		</form>
+		<script> 
+			function Reponses(){
+			const reponse1=document.MonQuizz.sin.value;
+            const reponse2=document.MonQuizz.ville.value;
+            const reponse4=document.MonQuizz.mois.value;
+			var note=0
+            var texte1=""
+            var texte2=""
+            var texte3=""
+            var texte4=""
+            
+			if (reponse1 == "Cerisier"){
+			note +=1
+            texte1 ="La reponse a la premiere question est correct"
+			}
+			else{
+			texte1 ="La reponse a la premiere question est incorrect"
+			}
+            if (reponse2 == "Kyoto"){
+			note +=1
+            texte2 ="La reponse a la deuxieme question est correct"
+			}
+			else{
+			texte2 ="La reponse a la deuxieme question est incorrect"
+			}
+            if (document.getElementById("B").checked == true && document.getElementById("A").checked == false && document.getElementById("O").checked == false && document.getElementById("K").checked == false){
+			note +=1
+            texte3 ="La reponse a la troisieme question est correct"
+			}
+			else{
+			texte3 ="La reponse a la troisieme question est incorrect"
+			}
+            if (reponse4 == "A"){
+			note +=1
+            texte4 ="La reponse a la quatrieme question est correct"
+			}
+			else{
+			texte4 ="La reponse a la quatrieme question est incorrect"
+			}
+            alert (""+texte1+"\n"+texte2+"\n"+texte3+"\n"+texte4+"\n"+note+"/4")
+			}
+		
+		</script>
+		
+	</body>
+</html>
