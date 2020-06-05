@@ -7,5 +7,5 @@
 
 $\vec{u}$
  
-$rigtoverarrow{RE}$
+$\rigtoverarrow{RE}$
 $x^2$
