@@ -13,3 +13,5 @@ La première apparition de la lettre « e » pour désigner la base
  
  $rigtoverarrow{RE}$
  
+ $x^2$
+ 
